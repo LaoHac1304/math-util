@@ -23,7 +23,7 @@ public class MathUtility {
                 throw new IllegalArgumentException("Invalid argument, N must be between 0..20");
             if (n==0 || n==1)
                 return 1;
-            long product = 1;
+            long product = 0;// make code wrong
             for (int i = 1; i <= n; i++) {
                 product *= i;
             }
