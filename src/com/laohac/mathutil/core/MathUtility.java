@@ -5,6 +5,9 @@
  */
 package com.laohac.mathutil.core;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author simnh
@@ -18,6 +21,11 @@ public class MathUtility {
         // ham tinh giai thua
     
     public static long getFactorial(int n){
+        
+        List<String> list = Arrays.asList("one", "two", "three");
+        list.stream()
+            .map(String::toUpperCase)
+            .forEach(System.out::println);
             
             if (n<0 || n>20)
                 throw new IllegalArgumentException("Invalid argument, N must be between 0..20");
